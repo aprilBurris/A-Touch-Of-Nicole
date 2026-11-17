@@ -1,0 +1,132 @@
+:root {
+    --black: #080606;
+    --rose-gold: #D99B8D;
+    --blush: #F1D2CA;
+}
+
+body {
+    background: var(--black);
+    color: white;
+}
+
+/* NAVIGATION */
+
+.luxury-nav {
+    background: var(--black);
+    border-bottom: 1px solid var(--rose-gold);
+    padding: 18px 0;
+}
+
+.brand-logo {
+    color: var(--rose-gold) !important;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.brand-logo small {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.nav-link {
+    color: var(--blush) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--rose-gold) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--rose-gold);
+}
+
+.navbar-toggler-icon {
+    filter: invert(80%) sepia(15%);
+}
+
+/* HERO */
+
+.hero-section {
+    padding: 90px 0;
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            #38201d,
+            transparent 50%
+        ),
+        var(--black);
+}
+
+.hero-title {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 65px);
+    font-style: italic;
+    color: var(--rose-gold);
+}
+
+.hero-subtitle {
+    letter-spacing: 6px;
+    color: var(--blush);
+}
+
+.gold-divider {
+    width: 75%;
+    height: 1px;
+    background: var(--rose-gold);
+    margin: 25px auto;
+}
+
+.hero-tagline {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--rose-gold);
+    font-size: 25px;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 35px;
+    color: var(--blush);
+    font-size: 13px;
+}
+
+.appointment-text {
+    color: var(--rose-gold);
+    letter-spacing: 4px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* PORTRAIT */
+
+.hero-portrait {
+    width: 100%;
+    border: 2px solid var(--rose-gold);
+    border-radius: 12px;
+    box-shadow: 0 0 35px
+        rgba(217,155,141,0.25);
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-subtitle {
+        letter-spacing: 3px;
+    }
+}
